@@ -26,4 +26,3 @@ public class LectureEcritureFichier {
         return out.toString();
     }
 }
-
