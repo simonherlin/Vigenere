@@ -25,7 +25,8 @@ public class TraitementArgument {
     }
 
     public void traitement() {
-        if (this.argument[0] != null && this.argument[1] != null && this.argument[2] != null) {
+        //if (this.argument[0] != null && this.argument[1] != null && this.argument[2] != null) {
+          if (this.argument.length ==2 || this.argument.length == 3) {
             switch(this.argument[0]) {
                 case "-c" : traitementC(); break;
                 case "-d" : traitementD(); break;
