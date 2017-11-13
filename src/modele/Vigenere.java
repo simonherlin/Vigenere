@@ -7,7 +7,7 @@ public class Vigenere {
         String loweredkey = Key.toLowerCase(), cryptedmessage = "";
         for (char ch: Message.toCharArray()) {
             if (ch >= 'A' && ch <= 'Z') {
-                cryptedmessage+= (char)(Math.floorMod(((((int)ch)-'A')+(((int)loweredkey.charAt(i%loweredkey.length()))-'A')),26)+'A');
+                cryptedmessage+= (char)(Math.floorMod(((((int)ch)-'A')+(((int)loweredkey.charAt(i%loweredkey.length()))-'a')),26)+'A');
                 i++;
             } else {
                 if (ch >= 'a' && ch <= 'z') {
